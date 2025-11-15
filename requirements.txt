@@ -1,0 +1,53 @@
+# AI Programming Assignments - Required Libraries
+# Install all packages with: pip install -r requirements.txt
+
+# ============================================
+# Core Dependencies (Required for all assignments)
+# ============================================
+pygame>=2.5.0
+numpy>=1.24.0
+plotly>=5.14.0
+
+# ============================================
+# Data Analysis and Visualization
+# ============================================
+matplotlib>=3.7.0
+pandas>=2.0.0
+scipy>=1.10.0
+
+# ============================================
+# Reinforcement Learning (Mountaincar Assignment)
+# ============================================
+gymnasium>=0.29.0
+
+# ============================================
+# Installation Instructions
+# ============================================
+# 
+# Method 1 - Using pip (Recommended):
+#   pip install -r requirements.txt
+#
+# Method 2 - Using conda environment (BEST for complete setup):
+#   conda env create -f environment.yml
+#   conda activate cs221
+#
+# Method 3 - Using conda packages directly:
+#   conda install pygame numpy plotly matplotlib pandas scipy gymnasium -c conda-forge
+#
+# Method 4 - Manual installation:
+#   pip install pygame numpy plotly matplotlib pandas scipy gymnasium
+#
+# ============================================
+# Verification
+# ============================================
+# After installation, verify by running:
+#   python -c "import pygame, numpy, plotly, matplotlib, pandas, scipy, gymnasium; print('All packages installed successfully!')"
+#
+# ============================================
+# Notes for Lecturer
+# ============================================
+# - All assignment folders (foundations, sentiment, pacman, etc.) are included in the submission
+# - These folders contain local modules and do NOT need separate installation
+# - The notebook uses relative paths and works from any location
+# - No additional configuration needed - just install the packages above and run the notebook
+# - Python 3.12 recommended (tested on Python 3.12.12)

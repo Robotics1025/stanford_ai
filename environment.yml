@@ -1,0 +1,70 @@
+# Conda Environment Configuration for AI Assignments
+# Create environment with: conda env create -f environment.yml
+# Activate with: conda activate cs221
+
+name: cs221
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  # Python version
+  - python=3.12
+
+  # Core numerical and scientific computing
+  - numpy>=1.24.0
+  - scipy>=1.10.0
+
+  # Data manipulation and analysis
+  - pandas>=2.0.0
+
+  # Visualization libraries
+  - matplotlib>=3.7.0
+  - plotly>=5.14.0
+
+  # Game development and GUI
+  - pygame>=2.5.0
+  
+  # Reinforcement learning
+  - gymnasium>=0.29.0
+
+  # Geospatial data processing (for route assignment)
+  - osmium-tool
+  
+  # Additional dependencies via pip
+  - pip
+  - pip:
+    - typing-extensions>=4.0.0
+
+# ============================================
+# Installation Instructions
+# ============================================
+#
+# 1. Create the environment:
+#    conda env create -f environment.yml
+#
+# 2. Activate the environment:
+#    conda activate cs221
+#
+# 3. Verify installation:
+#    python -c "import pygame, numpy, pandas, matplotlib, plotly, gymnasium; print('All packages installed!')"
+#
+# 4. Run the notebook:
+#    jupyter notebook AI_Assignments.ipynb
+#
+# ============================================
+# Update existing environment:
+# ============================================
+#    conda env update -f environment.yml --prune
+#
+# ============================================
+# Remove environment:
+# ============================================
+#    conda deactivate
+#    conda env remove -n cs221
+#
+# ============================================
+# Export current environment:
+# ============================================
+#    conda env export > environment.yml
